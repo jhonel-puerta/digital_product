@@ -1,0 +1,13 @@
+@media (max-width: 950px) {
+	.mention{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.name-user{
+		text-align: center;
+	}
+	.mention-container p{
+		text-align: justify;
+	}
+}

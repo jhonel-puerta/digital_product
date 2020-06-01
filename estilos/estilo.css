@@ -1,0 +1,232 @@
+/* ---------- variables*/
+
+:root{
+/*----------- colors*/
+--green_color:#7acc2d;
+--white_color:white;
+--text-general:#212F3D;
+
+/*------------size*/
+--width_product: 300px;
+--height_product:350px;
+--text-name-product:25px;
+--name-section:30px;
+--svg-height:200px;
+--text-presentation:30px;
+--mention-width:40%;
+
+/*------------- border*/
+--border-radius:10px;
+
+/*-------------boxshadow*/
+
+--box-shadow:0 0 10px rgba(0,0,0,30%);
+}
+
+
+
+/* ---------- variables*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: Helvetica;
+}
+/* -------------------------- header*/
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--green_color) ;
+	padding: 10px;
+}
+.logo{
+	font-size: 40px;
+	font-weight: bolder;
+	color: var(--white_color);
+	text-decoration: none;
+}
+.nav_options{
+	display: flex;
+}
+nav ul{
+	display: flex;
+}
+nav li{
+	margin-left: 20px;
+	list-style: none;
+}
+nav li a{
+	color: var(--text-general);
+	text-decoration: none;
+}
+li a:hover{
+	color: var(--white_color);
+}
+/*--------------- main section*/
+
+.main_section{
+	margin-top: 2%;
+}
+.main_section .text_presentation{
+	width: 50%;
+	font-size: var(--text-presentation);
+	color: gray;
+	margin-bottom: 30px;
+	border-radius: var(--border-radius);
+}
+
+/* --------------- products*/
+
+.products{
+	width: 100%;
+	margin-top: 0px;
+	padding-bottom: 50px;
+	background-image: url(../images/wavelarge.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.product{
+	position: relative;
+	margin-top: 30px;
+	width: var(--width_product);
+	height: var(--height_product);
+	background: #F8F9F9;
+	box-shadow: 0 0 10px rgba(0,0,0,30%);
+	border-radius: var(--border-radius);
+}
+.product .content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.product_description{
+	width: 80%;
+	color: #212F3D;
+	text-align: justify;
+
+}
+.name-product{
+	font-size: var(--text-name-product) ;
+}
+
+.main_button{
+	width: 80%;
+	height: 45px;
+	border-radius: var(--border-radius);
+	background-color: var(--green_color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: var(--white_color);
+	transition-duration: .4s;
+	position: absolute;
+	bottom: -20px;
+	box-shadow: var(--box-shadow);
+}
+.main_button:hover{
+	width: 75%;
+	height: 40px;
+	box-shadow: none;
+}
+.name-section{
+	font-size: var(--name-section);
+	color: var(--text-general);
+	margin-left: 20px;
+}
+.galery-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*-----------------menciones*/
+
+.mentions-title{
+	font-size: var(--text-presentation);
+	color: var(--text-general)
+}
+.mentions{
+	margin-top: 50px;
+}
+.cont-mentions{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.mention{
+	margin-top: 30px;
+	width: var(--mention-width);
+	box-shadow: var(--box-shadow);
+	padding-bottom: 25px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: var(--border-radius);
+	position: relative;
+}
+.mention-container{
+	width: 70%;
+}
+.mention-container p{
+	text-align: justify-all;
+}
+.name-user{
+	font-size: 20px;
+	color: var(--text-general)
+}
+.perfil{
+	border-radius: 50%;
+}
+.reactions{
+	background-color: var(--green_color);
+	position: absolute;
+	border-radius: var(--border-radius);
+	bottom: -20px;
+	width: 50%;
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: var(--box-shadow); 
+}
+
+.reaction{
+	font-size: 30px;
+	color: var(--white_color);
+	cursor: pointer;
+}
+.mas{
+	width: 200px;
+	height: 200px;
+	background-color: var(--green_color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--text-name-product);
+	color: var(--white_color);
+	box-shadow: var(--box-shadow);
+	text-decoration: none;
+}
+.mas-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

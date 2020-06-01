@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*-------------------variables*/
+:root{
+--footer-color:white;
+
+/*----------------colors*/
+--txt-footer:#17202A;
+}
+.products-galery{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+.products-section{
+	margin-top: 20px;
+}
+
+
+
+/*---------------------footer*/
+
+footer{
+	/*border-top: 1px solid #ABB2B9;*/
+	margin-top: 10%;
+	padding-top: 20px;
+	background-color: var(--footer-color);
+}
+.cont-info{
+	margin-bottom: 10px;
+	height: 300px;
+	display: flex;
+	justify-content: space-around;
+}
+.secure-pay{
+	width: 30%;
+}
+.secure-pay-img{
+	width: 100%;
+	height: 200px;
+	background-image: url(../images/secure-pay.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.contact{
+	width: 30%;
+	height: 200px;
+
+}
+.entrega{
+	width: 30%;
+}
+.entrega-img{
+	width: 100%;
+	height: 200px;
+	background-image: url(../images/entrega.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.cont-txt{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: var(--txt-footer);
+}
+.txt-footer{
+	color: var(--txt-footer);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.cont-info-contact{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.hr-style{
+	width: 50%;
+}
+.divisor-footer{
+	width: 1px;
+	height: 50%;
+	background-color: gray;
+}
